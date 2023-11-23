@@ -1,0 +1,107 @@
+.container {
+    width: 710px;
+    height: 900px;
+    margin-left: 1%;
+    border: 1px groove;
+    box-shadow: rgb(189, 185, 185);
+    position: relative;
+}
+
+.row span {
+    color: red;
+
+}
+
+div.row {
+    width: 76%;
+}
+
+.col input {
+    height: 45%;
+    border-radius: 2px;
+}
+
+.mb-3 input {
+    height: 45%;
+    border-radius: 2px;
+}
+
+.rating {
+    position: absolute;
+    justify-content: left;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    letter-spacing: 10px;
+}
+
+.rating input {
+    display: none;
+
+}
+
+.rating label {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.rating label::before {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.rating label::after {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: relative;
+    font-size: 25px;
+    color: orange;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.rating label:hover::after,
+.rating label:hover~label::after,
+.rating input:checked~label::after {
+    opacity: 1;
+}
+
+.table1 span {
+    color: red;
+}
+
+.table2 span {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th {
+    text-align: left;
+    padding: 2px;
+    font-weight: normal;
+
+}
+
+td {
+    text-align: center;
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(207, 209, 209);
+}

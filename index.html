@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey From</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form class="container">
+        <label for="text" class="form-label"><strong>Name <span>*</span></strong></label>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" id="firstname" name="unname" required>
+                <label for="firstname" class="form-label">First</label>
+                <div class="valid-feedback">Please provide a vaild name</div>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="lastname" name="unname" required>
+                <label for="lastname" class="form-label">Last</label>
+                <div class="valid-feedback">Please provide a vaild name</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><strong>Email address
+                        <span>*</span></strong></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-4">
+                <label for="rating" class="form-label"><strong>Your Experience<span class="email" id="i4"
+                            aria-label="Required question"> *</span></strong></label>
+                <div class="rating">
+                    <input type="radio" name="star" id="star1"><label for="star1"></label>
+                    <input type="radio" name="star" id="star2"><label for="star2"></label>
+                    <input type="radio" name="star" id="star3"><label for="star3"></label>
+                    <input type="radio" name="star" id="star4"><label for="star4"></label>
+                    <input type="radio" name="star" id="star5"><label for="star5"></label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="mb-4">
+            <label for="text">Overall,how would you rate you experience with us?</label>
+        </div>
+        <table>
+            <div class="table1">
+                <label for="text" class="form-table"><strong>How satisfied are you with<span class="email" id="i4"
+                            aria-label="Required question"> *</span></strong></label>
+                <tr>
+                    <th></th>
+                    <td>Very Unsatisfied</td>
+                    <td>Unsatisfied</td>
+                    <td>Neutral</td>
+                    <td>Satisfied</td>
+                    <td>Very Satisfied</td>
+                </tr>
+                <tr>
+                    <th>Purchase</th>
+                    <td><input type="radio" name="star" id="star1"></td>
+                    <td><input type="radio" name="star" id="star2"></td>
+                    <td><input type="radio" name="star" id="star3"></td>
+                    <td><input type="radio" name="star" id="star4"></td>
+                    <td><input type="radio" name="star" id="star5"></td>
+                </tr>
+                <tr>
+                    <th>service</th>
+                    <td><input type="radio" name="star" id="star1"></td>
+                    <td><input type="radio" name="star" id="star2"></td>
+                    <td><input type="radio" name="star" id="star3"></td>
+                    <td><input type="radio" name="star" id="star4"></td>
+                    <td><input type="radio" name="star" id="star5"></td>
+                </tr>
+                <tr>
+                    <th>Company Overall</th>
+                    <td><input type="radio" name="star" id="star1"></td>
+                    <td><input type="radio" name="star" id="star2"></td>
+                    <td><input type="radio" name="star" id="star3"></td>
+                    <td><input type="radio" name="star" id="star4"></td>
+                    <td><input type="radio" name="star" id="star5"></td>
+                </tr>
+            </div>
+        </table>
+        <table>
+            <div class="table2">
+                <label for="text" class="form-table"><strong>How likely are you to<span class="email" id="i4"
+                            aria-label="Required question"> *</span></strong></label>
+                <tr>
+                    <th></th>
+                    <td>Very Unlikely</td>
+                    <td>Unlikely</td>
+                    <td>Neutral</td>
+                    <td>Likely</td>
+                    <td>Very Likely</td>
+                </tr>
+                <tr>
+                    <th>Buy from us again</th>
+                    <td><input type="radio" name="star" id="star1"></td>
+                    <td><input type="radio" name="star" id="star2"></td>
+                    <td><input type="radio" name="star" id="star3"></td>
+                    <td><input type="radio" name="star" id="star4"></td>
+                    <td><input type="radio" name="star" id="star5"></td>
+                </tr>
+                <tr>
+                    <th>Recommend our<br>product to others</th>
+                    <td><input type="radio" name="star" id="star1"></td>
+                    <td><input type="radio" name="star" id="star2"></td>
+                    <td><input type="radio" name="star" id="star3"></td>
+                    <td><input type="radio" name="star" id="star4"></td>
+                    <td><input type="radio" name="star" id="star5"></td>
+                </tr>
+                <tr>
+                    <th>Recommend our<br>company to others</th>
+                    <td><input type="radio" name="star" id="star1"></td>
+                    <td><input type="radio" name="star" id="star2"></td>
+                    <td><input type="radio" name="star" id="star3"></td>
+                    <td><input type="radio" name="star" id="star4"></td>
+                    <td><input type="radio" name="star" id="star5"></td>
+                </tr>
+            </div>
+        </table>
+        <div class="textarea">
+            <label for="exampleFormControlTextarea1" class="form-label"><strong>Additional comments or
+                    suggestions</strong></label>
+            <textarea class="form-control" id="floatingTextarea2"
+                style="height: 100px; height: 125px; border-radius: 2px;"></textarea>
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit" class="btn btn-outline-secondary"
+                style="background-color: rgb(207, 206, 206); border-radius: 2px;">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
